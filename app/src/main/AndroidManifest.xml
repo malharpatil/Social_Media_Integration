@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SocialMediaIntegration">
         <activity
-            android:name=".HomeActivity"
+            android:name="com.example.socialmediaintegration.GoogleSignInActivity"
             android:exported="true" />
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.example.socialmediaintegration.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.socialmediaintegration.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.socialmediaintegration.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

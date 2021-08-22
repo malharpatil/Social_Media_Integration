@@ -88,7 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
                     {
                         progressDialog.dismiss();
                         sendUserToNextActivity();
-                        Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_LONG).show();
                     }else
                     {
                         progressDialog.dismiss();
