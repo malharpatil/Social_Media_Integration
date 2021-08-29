@@ -43,9 +43,8 @@ public class MainActivity extends AppCompatActivity {
         inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
         btnLogin= findViewById(R.id.btnLogin);
-        btnGoogle = findViewById(R.id.btnGoogle);
-
         progressDialog = new ProgressDialog(this);
+
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
 
@@ -61,14 +60,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 performLogin();
-            }
-        });
-
-        btnGoogle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, GoogleSignInActivity.class);
-                startActivity(intent);
             }
         });
     }
